@@ -1,0 +1,8 @@
+{
+  "displayName": "BreakerBox",
+  "shortName": "BreakerBox",
+  "slug": "breakerbox",
+  "bundleId": "com.breakerbox.app",
+  "tagline": "Your panel, mapped. Know exactly what to switch off.",
+  "scheme": "breakerbox"
+}
