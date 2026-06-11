@@ -29,6 +29,37 @@ export const colors = {
   danger: '#e0533d',
 } as const
 
+/**
+ * "Classic Steel" panel skin — modeled on a real residential load center:
+ * gray steel enclosure, black breaker bodies, paper circuit-label tags.
+ * Future skins (Smart Panel, Aluminum) will live alongside this one.
+ */
+export const steel = {
+  outer: '#8f969e', // enclosure steel
+  outerEdge: '#565c63',
+  trim: '#a8aeb6', // inner dead-front panel
+  trimEdge: '#787e86',
+  channel: '#7d838b', // center channel between bus columns
+  channelEdge: '#62686f',
+  channelNum: '#3f444a',
+  knockout: '#9aa0a8', // unused-slot blank
+  knockoutEdge: '#878d95',
+  screw: '#c6cbd1',
+  screwSlot: '#4d5258',
+  breakerBody: '#1a1b1d',
+  breakerEdge: '#000000',
+  handle: '#34373c',
+  handleOff: '#46494e',
+  handleEdge: '#0c0d0e',
+  handleText: '#e6e6e6',
+  labelPaper: '#f4f2ec',
+  labelPaperEdge: '#b9b4a4',
+  labelText: '#23272d',
+  labelSub: '#7a766a',
+  offText: '#c0392b',
+  stamp: '#5a6068', // embossed lettering on the steel
+} as const
+
 export const space = {
   xs: 4,
   sm: 8,
