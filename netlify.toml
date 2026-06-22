@@ -1,0 +1,16 @@
+# Netlify deploy config for the BreakerBox web build.
+# Connect this repo in Netlify (or use `netlify deploy`) — these settings make it turnkey.
+
+[build]
+  command = "npm run build:web"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Expo Router static export emits one HTML file per route. This fallback keeps
+# any unknown deep link rendering the app shell instead of a hard 404.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
